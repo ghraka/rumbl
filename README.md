@@ -1,20 +1,26 @@
 # Rumbl
 
-To start your Phoenix app:
+Rumbl is a phoniex project from the book Programming Phoenix book
 
+To clone this repo: `git clone https://github.com/ghraka/rumbl.git`
+
+To start this Phoenix app:
+
+  * Change into the cloned directory `cd rumbl`
   * Install dependencies with `mix deps.get`
   * Create and migrate your database with `mix ecto.create && mix ecto.migrate`
   * Install Node.js dependencies with `npm install`
   * Start Phoenix endpoint with `mix phoenix.server`
+  * Navigate to `localhost:4000`
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
-Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
+Defined Routes:
 
-## Learn more
-
-  * Official website: http://www.phoenixframework.org/
-  * Guides: http://phoenixframework.org/docs/overview
-  * Docs: https://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix
+`page_path     GET     /              Rumbl.PageController :index`
+`user_path     GET     /users         Rumbl.UserController :index`
+`user_path     GET     /users/new     Rumbl.UserController :new`
+`user_path     GET     /users/:id     Rumbl.UserController :show`
+`user_path     POST    /users         Rumbl.UserController :create`
+`session_path  GET     /sessions/new  Rumbl.SessionController :new`
+`session_path  POST    /sessions      Rumbl.SessionController :create`
+`session_path  DELETE  /sessions/:id  Rumbl.SessionController :delete`
