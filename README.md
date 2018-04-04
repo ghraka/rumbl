@@ -1,6 +1,6 @@
 # Rumbl
 
-Rumbl is a phoniex project from the book Programming Phoenix book
+Rumbl is a phoniex project from the book Programming Phoenix.
 
 To clone this repo: `git clone https://github.com/ghraka/rumbl.git`
 
